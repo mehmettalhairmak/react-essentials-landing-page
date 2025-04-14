@@ -9,7 +9,6 @@ export default function ExampleSection() {
 
   function handleSelect(selectedButton: string) {
     setSelectedTopic(selectedButton);
-    console.log(selectedButton);
   }
 
   let tabContent = <p>Please select a topic.</p>;
