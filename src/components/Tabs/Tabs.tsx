@@ -3,11 +3,11 @@ import { JSX, ReactNode } from "react";
 export default function Tabs({
   children,
   buttons,
-  buttonsContainer,
+  buttonsContainer = "menu",
 }: {
   children: ReactNode;
   buttons: ReactNode;
-  buttonsContainer: keyof JSX.IntrinsicElements;
+  buttonsContainer?: keyof JSX.IntrinsicElements;
 }) {
   const ButtonsContainer = buttonsContainer;
 
