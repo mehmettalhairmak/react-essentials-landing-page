@@ -1,15 +1,19 @@
-import { ReactNode } from "react";
+import { JSX, ReactNode } from "react";
 
 export default function Tabs({
   children,
   buttons,
+  buttonsContainer,
 }: {
   children: ReactNode;
   buttons: ReactNode;
+  buttonsContainer: keyof JSX.IntrinsicElements;
 }) {
+  const ButtonsContainer = buttonsContainer;
+
   return (
     <>
-      <menu>{buttons}</menu>
+      <ButtonsContainer>{buttons}</ButtonsContainer>
       {children}
     </>
   );
